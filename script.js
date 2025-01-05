@@ -101,13 +101,11 @@ const invertImg = () => {
     const jumpAnimation = new Animation(danceKeyfreams, document.timeline);
 
     if(invert) {
-      // jumpAnimation.play();
       danceImg.style.transform = "scale(1, 1)";
     } else {
-      // jumpAnimation.play();
       danceImg.style.transform = "scale(-1, 1)";
     }
-    // jumpAnimation.play();
+    jumpAnimation.play();
     invert = !invert;
   }
 };
